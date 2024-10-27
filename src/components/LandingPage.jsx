@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import Logo from '../../public/assets/images/LogoQR.png';
 
 const LandingPage = () => {
   const [baseInfo, setBaseInfo] = useState({
@@ -26,21 +27,23 @@ const LandingPage = () => {
   };
   const handleLoginSubmit = (e) => {
     e.preventDefault();
-    console.log(`👉  file: LandingPage.jsx:46  HandleSubmit  set:`, baseInfo);
-    console.log(`👉  file: LandingPage.jsx:30  HandleSubmit  HandleSubmit:`);
     navigate('/question/i');
   };
 
   return (
-    <div className="h-full flex flex-col items-center justify-center bg-gradient-to-b from-gray-900 to-gray-700">
+    <div className="h-full flex flex-col items-center justify-center ">
       {/* Login Form Container */}
-      <div className="bg-gray-800 bg-opacity-70 p-6 sm:p-10 rounded-lg shadow-lg w-11/12 sm:w-96 max-w-md">
+      <div className="bg-gray-950/40 backdrop-blur-2xl p-6 sm:p-10 rounded-xl shadow-lg w-11/12  max-w-md">
         <div className="text-center mb-6">
           {/* Logo or icon */}
-          <div className="bg-gray-600 w-10 h-10 mx-auto rounded-full flex items-center justify-center mb-4">
-            <span className="text-white text-xl">+</span>
+          <div className=" w-15 h-15 mx-auto  flex items-center justify-center mb-4">
+            <span className="text-whitetext-xl">
+              <img className="rounded-xl" src={Logo} alt="Logo_HP" />
+            </span>
           </div>
-          <h2 className="text-white text-2xl sm:text-3xl font-bold">HP</h2>
+          <h2 className="text-white text-2xl sm:text-3xl font-bold">
+            HP Treasure Hunt
+          </h2>
         </div>
 
         {/* Form Fields */}
@@ -86,7 +89,7 @@ const LandingPage = () => {
           {/* Sign in button */}
           <button
             type="submit"
-            className="w-full flex justify-center py-2 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            className="w-full flex justify-center py-2 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-gradient-to-r from-hp_bg to-blue-400 hover:from-bg-hp_bg-700 hover:to-blue-700 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           >
             Sign In
           </button>
@@ -104,10 +107,6 @@ const LandingPage = () => {
       </div>
 
       {/* Footer Message */}
-      <div className="absolute bottom-6 text-center text-sm text-gray-400">
-        Join over <strong className="text-white">2M</strong> global social media
-        users.
-      </div>
     </div>
   );
 };

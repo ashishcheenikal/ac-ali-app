@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'FormaDJRVariableWeb';
+    src: url('assets/fonts/FormaDJR_Web/FormaDJRDisplay-Regular.woff') format('woff'),
+         url('assets/fonts/FormaDJR_Web/FormaDJRDisplay-Regular.woff2') format('woff2'),
+         url('assets/fonts/FormaDJR_Web/FormaDJRMicro-Regular.woff') format('woff'),
+         url('assets/fonts/FormaDJR_Web/FormaDJRMicro-Regular.woff2') format('woff2');
+    font-weight: 1 900;
+    font-style: normal;
+}
+
+@layer utilities {
+    .bg-hp-gradient {
+      @apply bg-gradient-to-b from-hp_bg to-blue-400;
+    }
+  }
+  
