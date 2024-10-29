@@ -14,7 +14,7 @@
 
 @layer utilities {
     .bg-hp-gradient {
-      @apply bg-gradient-to-b from-hp_bg to-blue-400;
+      @apply bg-gradient-to-b from-hp-primary-600 to-hp-primary-950;
     }
   }
   

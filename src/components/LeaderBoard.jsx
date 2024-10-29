@@ -8,8 +8,8 @@ const LeaderBoard = () => {
   ];
 
   return (
-    <div className="h-full flex flex-col items-center justify-center p-4 bg-gray-800 text-white">
-      <div className="bg-gray-900 p-6 rounded-lg shadow-md w-full sm:w-4/5 md:w-3/5 lg:w-2/5">
+    <div className="h-full flex flex-col items-center justify-center p-4 text-white">
+      <div className="bg-gray-950/40 backdrop-blur-2xl p-6 rounded-xl shadow-md w-full sm:w-4/5 md:w-3/5 lg:w-2/5">
         <h2 className="text-2xl sm:text-3xl font-semibold mb-4 text-center">
           Leaderboard
         </h2>

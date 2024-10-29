@@ -38,8 +38,8 @@ const Question = () => {
   };
 
   return (
-    <div className="h-full flex flex-col justify-center items-center p-4 bg-gray-800 text-white">
-      <div className="bg-gray-900 p-6 rounded-lg shadow-md w-full sm:w-4/5 md:w-3/5 lg:w-2/5">
+    <div className="h-full flex flex-col justify-center items-center p-4 text-white">
+      <div className="bg-white p-6 rounded-xl shadow-md w-full sm:w-4/5 md:w-3/5 lg:w-2/5">
         <div className="flex justify-center items-center mb-4">
           <h2 className="text-2xl sm:text-3xl font-semibold">Quiz Question</h2>
         </div>
@@ -136,7 +136,7 @@ const Question = () => {
 
           <button
             type="submit"
-            className="w-full bg-indigo-600 py-2 rounded-lg text-white font-semibold hover:bg-indigo-700 transition-colors"
+            className="w-full bg-gradient-to-r from-hp_bg to-blue-400 hover:from-bg-hp_bg via hover:to-blue-500 py-2 rounded-lg text-white font-semibold hover:bg-indigo-700 transition-colors"
           >
             Submit Answer
           </button>

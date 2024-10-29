@@ -33,30 +33,30 @@ const LandingPage = () => {
   return (
     <div className="h-full flex flex-col items-center justify-center ">
       {/* Login Form Container */}
-      <div className="bg-gray-950/40 backdrop-blur-2xl p-6 sm:p-10 rounded-xl shadow-lg w-11/12  max-w-md">
+      <div className="bg-white p-4 sm:p-10 rounded-lg shadow-lg w-11/12  max-w-md">
         <div className="text-center mb-6">
           {/* Logo or icon */}
           <div className=" w-15 h-15 mx-auto  flex items-center justify-center mb-4">
             <span className="text-whitetext-xl">
-              <img className="rounded-xl" src={Logo} alt="Logo_HP" />
+              <img className="rounded-lg" src={Logo} alt="Logo_HP" />
             </span>
           </div>
-          <h2 className="text-white text-2xl sm:text-3xl font-bold">
+          <h2 className="text-hp-primary-950 text-2xl sm:text-3xl font-bold">
             HP Treasure Hunt
           </h2>
         </div>
 
         {/* Form Fields */}
-        <form className="space-y-4" onSubmit={handleLoginSubmit}>
+        <form className="" onSubmit={handleLoginSubmit}>
           <div>
-            <label
+            {/* <label
               htmlFor="firstname"
-              className="block text-sm font-medium text-gray-300"
+              className="block text-sm font-medium text-gray-900"
             >
               First Name
-            </label>
+            </label> */}
             <input
-              className="mt-1 block w-full px-4 py-2 bg-gray-900 text-white border border-gray-700 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 placeholder-"
+              className="mt-1 block w-full px-4 py-2 bg-hp-primary-950 text-white border border-gray-700 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 text-center"
               type="firstname"
               id="firstname"
               name="firstname"
@@ -68,14 +68,14 @@ const LandingPage = () => {
           </div>
 
           <div>
-            <label
+            {/* <label
               htmlFor="lastname"
-              className="block text-sm font-medium text-gray-300"
+              className="block text-sm font-medium text-gray-900"
             >
               Last Name
-            </label>
+            </label> */}
             <input
-              className="mt-1 block w-full px-4 py-2 bg-gray-900 text-white border border-gray-700 rounded-lg focus:ring-indigo-500 focus:border-indigo-500"
+              className="mt-4 block w-full px-4 py-2 bg-hp-primary-950 text-white border border-gray-700 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 text-center"
               type="lastname"
               id="lastname"
               name="lastname"
@@ -89,24 +89,12 @@ const LandingPage = () => {
           {/* Sign in button */}
           <button
             type="submit"
-            className="w-full flex justify-center py-2 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-gradient-to-r from-hp_bg to-blue-400 hover:from-bg-hp_bg-700 hover:to-blue-700 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            className="w-full mt-8 flex justify-center py-2 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-hp-primary-950 bg-hp-primary-50 hover:bg-hp-primary-600 hover:text-hp-primary-50 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 border-hp-primary-900"
           >
             Sign In
           </button>
         </form>
-
-        {/* Google Sign in */}
-        {/* <button className="w-full mt-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 flex items-center justify-center space-x-2">
-          <img
-            src="https://www.google.com/favicon.ico"
-            alt="Google"
-            className="w-5 h-5"
-          />
-          <span>Sign in with Google</span>
-        </button> */}
       </div>
-
-      {/* Footer Message */}
     </div>
   );
 };
